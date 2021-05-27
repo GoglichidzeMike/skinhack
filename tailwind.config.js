@@ -3,13 +3,19 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: (theme) => ({
-                // "blogs-index": "url('/image/blogs-bg.jpg')",
+                "hero-bg": "url('/image/home/hero-bg.jpg')",
             }),
             colors: {
-                primary: "#105650",
-                secondary: "#55C187",
+                primary: "#FFB100",
+                secondary: "#25283d",
                 dark: "#1F1F1F",
-                third: "#6C9593",
+                third: "#ffebe7",
+            },
+            fontFamily: {
+                sans: ["Poppins"],
+            },
+            minHeight: {
+                544: "544px",
             },
         },
     },
