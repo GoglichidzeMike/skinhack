@@ -4,7 +4,9 @@ module.exports = {
         extend: {
             backgroundImage: (theme) => ({
                 "hero-bg": "url('/image/home/hero-bg.jpg')",
+                "hero-sm": "url('/image/home/hero-sm.jpg')",
             }),
+
             colors: {
                 primary: "#FFB100",
                 secondary: "#25283d",

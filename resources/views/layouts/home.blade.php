@@ -32,13 +32,12 @@
 <body class="bg-white min-h-screen flex justify-between flex-col overflow-visible">
   <a id="button"></a>
   <div class="hero">
-
-    <div class="nav w-full z-10 md:h-auto  overflow-hidden md:overflow-visible">
+    <div class="nav w-full z-10 px-4 md:p-0 md:h-auto  overflow-hidden md:overflow-visible border-b border-third border-opacity-20">
       <div class="py-4 w-95  xl:w-8/12 relative mx-auto md:flex justify-between items-center">
         <a href="{{ route('home') }}" class="font-medium text-2xl color-primary">
-          <img src="/image/home/logo.png" class="w-10 h-10" alt="Skinhac Logo">  
+          <img src="/image/home/logo.png" class="w-auto h-10" alt="Skinhac Logo">  
         </a>
-          <div class="burger absolute top-3 right-2 md:hidden cursor-pointer">
+          <div class="burger absolute top-2 right-2 md:hidden cursor-pointer">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -48,13 +47,13 @@
             <a href="{{ route('home') }}" class="nav-link">Home</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Secion 1</a>
+            <a href="#how" class="nav-link">About us</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Second</a>
+            <a href="#why" class="nav-link">Why us</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Third</a>  
+            <a href="#assesment" class="nav-link">Asessment</a>  
           </li>
         </ul>
         <a href="/#contact" class="text-sm md:text-base bg-pink py-1 px-8 shadow-md text-white font-medium rounded-xl hover:text-secondary hover:bg-white hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">Contact</a>
@@ -62,15 +61,15 @@
       </div>
     </div>
     <div class="w-97 md:w-10/12 lg:w-8/12 mx-auto py-20 min-h-544 flex flex-col md:flex-row">
-      <div class="w-full md:w-1/2">
-        <h1 class="text-white text-3xl md:text-4xl">Header text goes here! We can make it shrot or long, its entirely up to you!</h1>
-        <p class="text-white my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non suscipit nesciunt voluptatum. Assumenda odio, labore dolorum tempore minima quas?
+      <div class="w-full lg:w-1/2">
+        <h1 class="text-white text-2xl md:text-4xl text-center sm:text-left">Header text goes here! We can make it shrot or long, its entirely up to you!</h1>
+        <p class="text-white my-10 text-sm sm:text-base text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non suscipit nesciunt voluptatum. Assumenda odio, labore dolorum tempore minima quas?
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <div class="mx-auto md:m-0">
+        <div class="mx-auto md:m-0 flex sm:block justify-center">
           {{-- <a href="#contact" class="px-6 py-2 bg-white rounded-xl font-medium text-dark shadow-md hover:shadow-xl hover:bg-secondary  hover:text-white transition duration-300 ease-linear mr-6">Talk to us!</a> --}}
-          <a href="#contact" class="px-6 py-2 bg-pink rounded-xl font-medium text-white shadow-md hover:shadow-xl hover:bg-white  hover:text-secondary  transition duration-300 ease-linear mr-6">Talk to us!</a>
-          <a href="#how" class="px-6 py-2  rounded-xl text-white font-medium border-white border hover:shadow-xl hover:bg-white hover:text-secondary transition duration-300 ease-linear">See how it works</a>
+          <a href="#contact" class="px-6 py-2 text-xs sm:text-base  bg-pink rounded-xl font-medium text-white shadow-md hover:shadow-xl hover:bg-white  hover:text-secondary  transition duration-300 ease-linear mr-6">Talk to us!</a>
+          <a href="#how" class="px-6 py-2     text-xs sm:text-base rounded-xl text-white font-medium border-white border hover:shadow-xl hover:bg-white hover:text-secondary transition duration-300 ease-linear">See how it works</a>
         </div>
       </div>
     </div>
@@ -80,39 +79,38 @@
   @yield('content')
 
 
-  <footer class="mt-32 bg-primary w-full">
+  <footer class="bg-white w-full">
     <div class="w-full lg:w-8/12  px-4 lg:px-0 py-4 text-white mx-auto ">
       <ul class="text-sm align-center space-x-2 flex flex-row sm:justify-between">
         <div class="flex space-x-2">
-
-          <div class="sm:flex sm:space-x-2">
+          <div class="sm:flex sm:space-x-2 text-secondary">
             <li>
-              <a href="{{ route('home') }}" class="text-sm sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">Home</a>
+              <a href="{{ route('home') }}" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">Home</a>
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
             <li>
-              <a href="#" class="text-sm sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">Section Two</a>
+              <a href="#" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">Section Two</a>
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
           </div>
-          <div class="sm:flex sm:space-x-2">
+          <div class="sm:flex sm:space-x-2 text-secondary">
             <li>
-              <a href="#" class="text-sm sm:text-base py-3 hover:text-secondary focus:outline-none focus:text-secondary  transition duration-300 ease-out uppercase">Three</a>
+              <a href="#" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">Three</a>
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
             <li>
-              <a href="#" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">Something</a>  
+              <a href="#" class="text-sm sm:text-base py-3 hover:text-pink  focus:outline-none focus:text-pink transition duration-300 ease-out ">Something</a>  
             </li>
           </div>
         </div>
           
-        <div class="sm:flex sm:space-x-2 align-center">
+        <div class="sm:flex sm:space-x-2 align-center text-secondary">
           <li>
-            <a href="{{ route('dashboard') }}" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out uppercase">Dashboard</a>  
+            <a href="{{ route('dashboard') }}" class="text-sm sm:text-base py-3 hover:text-pink  focus:outline-none focus:text-pink transition duration-300 ease-out ">Dashboard</a>  
           </li>
           <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
           <li>
-            <a href="https://goglichidze.me" target="_blank" rel="nofollow noreferrer" class="text-sm sm:text-base py-3 hover:text-secondary  focus:outline-none focus:text-secondary transition duration-300 ease-out">&copy; Mikael</a>  
+            <a href="https://goglichidze.me" target="_blank" rel="nofollow noreferrer" class="text-sm sm:text-base py-3 hover:text-pink  focus:outline-none focus:text-pink transition duration-300 ease-out">&copy; Mikael</a>  
           </li>
         </div>
       </ul>
@@ -124,10 +122,27 @@
 
 <style>
 .hero{
-  background-image: url(/image/home/hero-bg.jpg);
-  background-size: auto 100%;
-  background-position: cover;
+  background-color: linear-gradient(89.68deg, #FFFFFF -1.23%, #FEA018 -1.22%, #FFA216 99.7%);
+  background-image: url(/image/home/hero-bt.jpg);
+  background-size:  auto 100%;
   background-repeat: no-repeat;
+  background-position: right;
 }
+
+@media(min-width: 895px){
+  .hero{
+    background-image: url(/image/home/hero-bg-md.jpg);
+    background-size: cover;
+  }
+}
+
+
+@media (min-width: 1400px){
+  .hero{
+    background-image: url(/image/home/hero-bg.jpg);
+  }
+}
+
+
 
 </style>

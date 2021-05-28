@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .nav-link {
-    @apply pt-3 pb-1 font-medium animated transition-colors hover:text-secondary duration-500 ease-in-out;
+    @apply pt-3 pb-1 font-medium animated transition-colors hover:text-third  duration-500 ease-in-out;
 }
 
 .step {
-    @apply relative rounded-xl my-4 w-52 h-52 bg-white shadow-md border border border-pink z-50 flex justify-center items-center p-1 hover:shadow-2xl transform hover:scale-105 hover:bg-pink  text-secondary hover:text-white transition duration-300 ease-out;
+    @apply relative rounded-xl my-4 w-52 h-52 bg-white shadow-md border border-pink z-50 flex justify-center items-center p-1 hover:shadow-2xl transform hover:scale-105 hover:bg-pink  text-secondary hover:text-white transition duration-300 ease-out;
 }
 
 .reason {
@@ -33,7 +33,7 @@
     right: 0;
     width: 0;
     height: 2px;
-    background-color: #25283d;
+    background-color: #ffebe7;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -43,7 +43,8 @@
 
 .nav {
     max-height: 4rem;
-    transition: max-height 400ms ease-in-out;
+    transition: max-height 220ms ease-in;
+    background-color: #ffb042;
 }
 
 .burger {
@@ -58,13 +59,14 @@
 
 .burger div {
     height: 3px;
-    background-color: #105650;
+    background-color: #25283d;
     margin: 6px;
     transition: all 0.3s ease;
 }
 
 .nav-active {
     max-height: 500px;
+    transition: max-height 400ms ease-in;
 }
 
 .toggle .line1 {
@@ -101,7 +103,7 @@
     font-weight: normal;
     font-style: normal;
     font-size: 2em;
-    line-height: 35px;
+    line-height: 32px;
     color: #fff;
 }
 #button:hover {
