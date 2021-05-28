@@ -57,20 +57,20 @@
             <a href="#" class="nav-link">Third</a>  
           </li>
         </ul>
-        <a href="/#contact" class="text-sm md:text-base bg-secondary py-1 px-8 shadow-md text-white font-medium rounded-xl hover:text-secondary hover:bg-white hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">Contact</a>
+        <a href="/#contact" class="text-sm md:text-base bg-pink py-1 px-8 shadow-md text-white font-medium rounded-xl hover:text-secondary hover:bg-white hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">Contact</a>
         </ul>
       </div>
     </div>
-    <div class="w-8/12 mx-auto py-20 min-h-544 flex">
-      <div class="w-1/2">
-        <h1 class="text-white  text-5xl">Header text goes here! We can make it shrot or long, its entirely up to you!</h1>
+    <div class="w-97 md:w-10/12 lg:w-8/12 mx-auto py-20 min-h-544 flex flex-col md:flex-row">
+      <div class="w-full md:w-1/2">
+        <h1 class="text-white text-3xl md:text-4xl">Header text goes here! We can make it shrot or long, its entirely up to you!</h1>
         <p class="text-white my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non suscipit nesciunt voluptatum. Assumenda odio, labore dolorum tempore minima quas?
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <div class="mx-auto md:m-0">
           {{-- <a href="#contact" class="px-6 py-2 bg-white rounded-xl font-medium text-dark shadow-md hover:shadow-xl hover:bg-secondary  hover:text-white transition duration-300 ease-linear mr-6">Talk to us!</a> --}}
-          <a href="#contact" class="px-6 py-2 bg-secondary rounded-xl font-medium text-white shadow-md hover:shadow-xl hover:bg-white  hover:text-secondary  transition duration-300 ease-linear mr-6">Talk to us!</a>
-          <a href="#quiz" class="px-6 py-2  rounded-xl text-white font-medium border-white border hover:shadow-xl hover:bg-white hover:text-secondary transition duration-300 ease-linear">Find out now!</a>
+          <a href="#contact" class="px-6 py-2 bg-pink rounded-xl font-medium text-white shadow-md hover:shadow-xl hover:bg-white  hover:text-secondary  transition duration-300 ease-linear mr-6">Talk to us!</a>
+          <a href="#how" class="px-6 py-2  rounded-xl text-white font-medium border-white border hover:shadow-xl hover:bg-white hover:text-secondary transition duration-300 ease-linear">See how it works</a>
         </div>
       </div>
     </div>
@@ -125,7 +125,9 @@
 <style>
 .hero{
   background-image: url(/image/home/hero-bg.jpg);
-  background-size: auto 100%
-  /* background: linear-gradient(89.68deg, #FFFFFF -1.23%, #FEA018 -1.22%, #FFA216 99.7%); */
+  background-size: auto 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
 }
+
 </style>

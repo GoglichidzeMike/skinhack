@@ -7,11 +7,19 @@
 }
 
 .step {
-    @apply relative rounded-xl w-52 h-52 bg-white shadow-md border border border-secondary z-50 flex justify-center items-center p-1 hover:shadow-2xl transform hover:scale-105 hover:bg-secondary text-secondary hover:text-white transition duration-300 ease-out;
+    @apply relative rounded-xl my-4 w-52 h-52 bg-white shadow-md border border border-pink z-50 flex justify-center items-center p-1 hover:shadow-2xl transform hover:scale-105 hover:bg-pink  text-secondary hover:text-white transition duration-300 ease-out;
 }
 
 .reason {
     @apply bg-white rounded-md shadow-md p-4 flex items-center transform hover:scale-110 hover:shadow-xl transition duration-300 ease-out;
+}
+
+.input {
+    @apply w-full mb-2 text-sm ring-1 ring-pink p-2 rounded-md shadow focus:outline-none focus:ring-2 focus:shadow-xl transition duration-300 ease-in-out;
+}
+
+.contact-card {
+    @apply w-56 h-36 bg-white text-secondary flex rounded-xl shadow-md p-2 flex-col justify-center items-center transform hover:scale-110 hover:shadow-xl hover:bg-pink hover:text-white transition duration-300 ease-out;
 }
 
 .animated {

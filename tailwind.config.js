@@ -10,12 +10,16 @@ module.exports = {
                 secondary: "#25283d",
                 dark: "#1F1F1F",
                 third: "#ffebe7",
+                pink: "#FE9399",
             },
             fontFamily: {
                 sans: ["Poppins"],
             },
             minHeight: {
                 544: "544px",
+            },
+            width: {
+                97: "97%",
             },
         },
     },
