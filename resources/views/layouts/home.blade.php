@@ -21,6 +21,7 @@
   <link rel="stylesheet preload" as="style" href="{{ asset('css/app.css') }}">
 
   <script src="/js/app.js" defer></script>
+  <script src="/js/quiz.js" defer></script>
   <script src="/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" rel="preload" as="script"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">

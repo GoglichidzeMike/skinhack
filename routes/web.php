@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 //some public routes
 
 Route::get('/', [HomeController::class,'index'])->name('home');
+Route::get('/quiz', [HomeController::class,'quiz'])->name('quiz');
+Route::post('/quiz', [HomeController::class,'quiz_store']);
 
 //dashboard route
 Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');

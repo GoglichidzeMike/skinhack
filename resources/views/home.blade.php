@@ -3,101 +3,45 @@
 @section('content')
     
 <div class="w-full py-32 relative" id="how">
-  <div class="absolute quarter-circle top-0 shadow-md bg-pink"></div>
-  <style>
 
-
-  .quarter-circle{
-      width: 120px;
-      height: 120px;
-      /* background: #25283d; */
-      border-radius: 0 0 120px 0;
-      -moz-border-radius: 0 0 120px 0;
-      -webkit-border-radius: 0 0 120px 0;
-   }
-
-   @media (min-width: 800px){
-
-     .quarter-circle{
-       width: 250px;
-       height: 250px;
-       /* background: #25283d; */
-       border-radius: 0 0 250px 0;
-       -moz-border-radius: 0 0 250px 0;
-       -webkit-border-radius: 0 0 250px 0;
-      }
-    }
-
-   
-
-  </style>
 
   <div class="w-97 md:w-11/12 lg:w-9/12 mx-auto">
     <div class="texts w-full lg:w-2/3 mx-auto">
       <h2 class="text-center text-3xl text-secondary tect-medium mb-4 tracking-wider">This is how it works</h2>
       <p class="text-center text-secondary">A short descriptive text for the how it works section. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolor Lorem ipsum dolor sit amet.</p>
     </div>
-    <div class="w-full flex flex-col justify-center  items-center my-10">
-       <div class="flex flex-wrap justify-center">
-          <div class="w-56 flex flex-col justify-center items-center m-1 sm:m-4">
-            <div class="relative">
+    <div class="w-full flex flex-row justify-center  items-center my-10 flex-wrap">
               <div class="step">
-                <p class="text-center text-xl">
+                <p class="text-center text">
                   Let's talk skin goals
                 </p>
                 <p class="absolute bottom-1 text-center text-sm uppercase opacity-75">Step 1</p>
               </div>
-              <div class="absolute my-4 top-1 left-1 rounded-xl w-52 h-52 bg-primary bg-opacity-30"></div>
-            </div>
-          </div>
-          <div class="w-56 flex flex-col justify-center items-cente m-1 sm:m-4">
-            <div class="relative">
               <div class="step">
-                <p class="text-center text-xl ">
+                <p class="text-center text">
                   Upload selfie
                 </p>
                 <p class="absolute bottom-1 text-center text-sm uppercase  opacity-75">Step 2</p>
               </div>
-              <div class="absolute  my-4 top-1 left-1 rounded-xl w-52 h-52 bg-primary bg-opacity-30"></div>
-            </div>
-          </div>
-          <div class="w-56 flex flex-col justify-center items-center m-1 sm:m-4">
-            <div class="relative">
               <div class="step">
-                <p class="text-center text-xl ">
+                <p class="text-center text">
                 Time to create your game plan!
                 Let our experts take a look
                 </p>
                 <p class="absolute bottom-1 text-center text-sm uppercase  opacity-75">Step 3</p>
               </div>
-              <div class="absolute  my-4 top-1 left-1 rounded-xl w-52 h-52 bg-primary bg-opacity-30"></div>
-            </div>
-          </div>
-        </div> 
-        <div class="flex flex-wrap justify-center">
-          <div class="w-56 flex flex-col justify-center items-center m-1 sm:m-4">
-            <div class="relative">
               <div class="step">
-                <p class="text-center text-xl ">
+                <p class="text-center text">
                   We'll send you your routine & products
                 </p>
                 <p class="absolute bottom-1 text-center text-sm uppercase  opacity-75">Step 4</p>
               </div>
-              <div class="absolute my-4  top-1 left-1 rounded-xl w-52 h-52 bg-primary bg-opacity-30"></div>
-            </div>
-          </div>
-          <div class="w-56 flex flex-col justify-center items-center m-1 sm:m-4">
-            <div class="relative">
               <div class="step">
-                <p class="text-center text-xl ">
+                <p class="text-center text">
                   We will check in with you to see if you're hitting your goals
                 </p>
                 <p class="absolute bottom-1 text-center text-sm uppercase  opacity-75">Step 5</p>
               </div>
-              <div class="absolute  my-4 top-1 left-1 rounded-xl w-52 h-52 bg-primary bg-opacity-30"></div>
-            </div>
-          </div>
-        </div>
     </div>
     {{-- CTA --}}
     <div class="text-center">
@@ -120,28 +64,28 @@
           <img src="/image/home/ico-1.svg" alt="Beauty Icon" class="w-20 h-auto mr-4">
           <div class="">
             <p class="text-xl text-secondary font-medium">Reason header</p>
-            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laboriosam!</p>
+            <p class="text-secondary text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laboriosam!</p>
           </div>
         </div>
         <div class="reason">
           <img src="/image/home/ico-2.svg" alt="Beauty Icon" class="w-20 h-auto mr-4">
           <div class="">
             <p class="text-xl text-secondary font-medium">Very Affordable</p>
-            <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry!</p>
+            <p class="text-secondary text-sm sm:text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry!</p>
           </div>
         </div>
         <div class="reason">
           <img src="/image/home/ico-3.svg" alt="Beauty Icon" class="w-20 h-auto mr-4">
           <div class="">
             <p class="text-xl text-secondary font-medium">Convinient</p>
-            <p class="text-secondary">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+            <p class="text-secondary text-sm sm:text-base">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
           </div>
         </div>
         <div class="reason">
           <img src="/image/home/ico-4.svg" alt="Beauty Icon" class="w-20 h-auto mr-4">
           <div class="">
             <p class="text-xl text-secondary font-medium">Team of Professionals</p>
-            <p class="text-secondary">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form!</p>
+            <p class="text-secondary text-sm sm:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form!</p>
           </div>
         </div>
         
@@ -149,27 +93,20 @@
     </div>
   
     <div class="p-4 lg:p-0 mb-6 lg:m-0">
-      <div class="relative flex">
-        <img src="/image/home/why-section.jpg" alt="Skin care" class="rounded-lg relative mx-auto" style="z-index:100">
-        <div class="lg:w-full h-full bg-secondary absolute bottom-2 right-2 rounded-lg shadow-xl" style="z-index:1"></div>
-        <div class="lg:w-full h-full bg-primary absolute top-3 left-3 rounded-lg shadow-xl" style="z-index:1"></div>
+      <div class="flex">
+        <img src="/image/home/why-section.jpg" alt="Skin care" class="rounded-lg relative mx-auto h-80 lg:h-auto " style="z-index:40">
+        {{-- <div class="lg:w-full h-full bg-secondary absolute bottom-2 right-2 rounded-lg shadow-xl" style="z-index:1"></div>
+        <div class="lg:w-full h-full bg-primary absolute top-3 left-3 rounded-lg shadow-xl" style="z-index:1"></div> --}}
       </div>
     </div>
   </div>
 
 </div>
 
-<div class="w-full bg-white py-40" id="assesment">
-  <div class="w-97 md:w-8/12 mx-auto flex flex-col items-center space-y-8">
-    <img src="/image/home/assesment-logo.svg" alt="Beauty icon" class="w-28 h-auto">
-    <h3 class="text-2xl text-secondary tracking-wider text-center md:text-left">Take the assessment right now</h3>
-    <p class="text-secondary text-center md:text-left">Last what are you waiting for text, the very last call to action goes here.</p>
-
-    <a href="#" class="diag-btn flex items-center text-secondary px-8 py-2 tracking-widest border border-secondary hover:shadow-xl">Start your diagnostic <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path id="icon" d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z" fill="#25283d"/></svg></a>
-  </div>
+<div id="assesment">
+  @include('includes.quiz')
 </div>
-
-@include('dashboard.includes.contact')
+@include('includes.contact')
 
 <style>
 

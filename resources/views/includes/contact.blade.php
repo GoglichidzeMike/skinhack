@@ -37,7 +37,7 @@
 
     <div class="bg-white w-97 lg:w-3/5 xl:w-2/5 mx-auto py-10 p-4 rounded-xl shadow-lg">
     <h2 class=" text-secondary tracking-wider mb-6">Contact form<h2>
-      <form action="" method="post" enctype="multipart/form-data" class="w-full md:flex justify-between">
+      <form action="{{ route('quiz') }}" method="post" enctype="multipart/form-data" class="w-full md:flex justify-between">
         @csrf
         <div class="w-full  mx-auto md:mx-0 md:mr-4">
           <label for="name" class="text-secondary block  mb-1">Name</label>
