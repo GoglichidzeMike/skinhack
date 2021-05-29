@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Lead;
-use App\Models\Event;
 
 class LeadController extends Controller
 {
@@ -45,22 +44,16 @@ class LeadController extends Controller
              'message'=> $request->message,
              'phone'=> $request->phone,
              'email'=> $request->email,
-             'referrer'=> $request->referrer
             ]
         );
 
-        return redirect(url()->previous().'#contact')->with('status', 'თქვენი შეტყობინება წარმატებით გაიგზავნა!');
+        return redirect(url()->previous().'#contact')->with('message', 'Your message was successfully sent!');
     }
 
 
     public function show($id)
     {
           $lead = Lead::find($id);
-
-          if ($lead->referrer) {
-           $event = Event::where('slug', '=', $lead->referrer )->firstOrFail();
-           $lead->event = $event->name;
-          };
 
           return view('dashboard.leads.show', ['lead'=>$lead]);
     }
@@ -89,7 +82,7 @@ class LeadController extends Controller
             "Expires"             => "0"
         );
 
-        $columns = array('name', 'phone', 'email', 'message', 'referrer', 'created_at');
+        $columns = array('name', 'phone', 'email', 'message', 'created_at');
 
         $callback = function() use($leads, $columns) {
             $file = fopen('php://output', 'w');
@@ -100,10 +93,9 @@ class LeadController extends Controller
                 $row['phone']    = $lead->phone;
                 $row['email']    = $lead->email;
                 $row['message']  = $lead->message;
-                $row['referrer']  = $lead->referrer;
                 $row['created_at']  = $lead->created_at->toFormattedDateString();
 
-                fputcsv($file, array($row['name'], $row['phone'], $row['email'], $row['message'], $row['referrer'], $row['created_at']), ";");
+                fputcsv($file, array($row['name'], $row['phone'], $row['email'], $row['message'], $row['created_at']), ";");
             }
 
             fclose($file);

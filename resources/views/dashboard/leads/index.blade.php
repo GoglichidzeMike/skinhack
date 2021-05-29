@@ -25,12 +25,11 @@
         }
       </script>
     <div class="flex rounded-sm w-full bg-gray-100 mb-4 shadow text-sm lg:text-base">
-      <div class="rounded-sm p-2 border-2 border-r-0 border-gray w-full lg:w-2/12">Name</div>
+      <div class="rounded-sm p-2 border-2 border-r-0 border-gray w-full lg:w-4/12">Name</div>
       <div class="rounded-sm p-2 border-2 border-r-0 border-gray sm:w-4/12 md:w-2/12 hidden sm:block">Date</div>
       <div class="rounded-sm p-2 border-2 border-r-0 border-gray w-2/12 hidden md:block">Email</div>
       <div class="rounded-sm p-2 border-2 border-r-0 bborder-gray w-2/12 hidden md:block">Phone</div>
       <div class="rounded-sm p-2 border-2 border-r-0 bborder-gray w-2/12 hidden lg:block">Message</div>
-      <div class="rounded-sm p-2 border-2 border-r-0 bborder-gray w-2/12 hidden lg:block">Event</div>
       <div class="flex w-12">
         <div class="w-full rounded-sm border-2 border-gray flex justify-center items-center">
             <img src="/image/dashboard/trash.svg" alt="Delete Icon">
@@ -43,12 +42,11 @@
       @foreach ($leads as $lead)
       
       <div class="flex rounded-sm w-full bg-gray-10 my-2 shadow-sm hover:shadow-md transition duration-150 ease-in-out text-sm lg:text-base">
-        <div class="rounded-sm p-2 border-2 border-r-0 border-gray w-full lg:w-2/12 flex justify-between"><a href="{{ route('lead.show', $lead->id) }}">{{ $lead->name }}</a></div>
+        <div class="rounded-sm p-2 border-2 border-r-0 border-gray w-full lg:w-4/12 flex justify-between"><a href="{{ route('lead.show', $lead->id) }}">{{ $lead->name }}</a></div>
         <div class="rounded-sm p-2 border-2 border-r-0 border-gray sm:w-4/12 md:w-2/12 hidden sm:block overflow-hidden">{{ $lead->created_at->toFormattedDateString() }} {{-- toDayDateTimeString --}}</div>
         <div class="rounded-sm p-2 border-2 border-r-0 bborder-gray w-2/12 hidden md:block overflow-hidden">{{ $lead->email}}</div>
         <div class="rounded-sm p-2 border-2 border-r-0 bborder-gray w-2/12 hidden md:block overflow-hidden">{{ $lead->phone}}</div>
         <div class="rounded-sm p-2 border-2 border-r-0 bborder-gray w-2/12 hidden lg:block overflow:hidden">{{ mb_substr($lead->message, 0, 20) }}@if (strlen($lead->message > "20"))...@endif</div>
-        <div class="rounded-sm p-2 border-2 border-r-0 bborder-gray w-2/12 hidden lg:block overflow:hidden">{{ mb_substr($lead->referrer, 0, 20) }}</div>
 
           
         <div class="flex w-12">

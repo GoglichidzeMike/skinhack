@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <script src="/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" rel="preload" as="script"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
   <title>Dashboards</title>
 </head>
 <body class="bg-gray-200 min-h-screen flex justify-between flex-col">
   <div class="bg-white mb-6">
-    <div class="nav w-95 md:w-10/12 mx-auto flex flex-col sm:flex-row justify-between overflow-hidden">
+    <div class="nav px-2 md:p-0 w-95 md:w-10/12 mx-auto flex flex-col sm:flex-row justify-between overflow-hidden">
       <div class="burger absolute top-2 right-2 sm:hidden cursor-pointer">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -24,8 +28,7 @@
           <a href="{{ route('home') }}" class="py-3">Home</a>
         </li>
         @auth
-          <li><a href="{{ route('blog.dashboard') }}" class="py-3">Blogs</a></li>
-          <li><a href="{{ route('event.dashboard') }}" class="py-3">Events</a></li>
+          <li><a href="{{ route('assessment.index') }}" class="py-3">Assessments</a></li>
           <li><a href="{{ route('lead.dashboard') }}" class="py-3">Leads</a></li>
         @endauth
       </ul>

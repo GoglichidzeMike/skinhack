@@ -33,7 +33,7 @@
 <body class="bg-white min-h-screen flex justify-between flex-col overflow-visible">
   <a id="button"></a>
   <div class="hero">
-    <div class="nav w-full z-10 px-4 md:p-0 md:h-auto  overflow-hidden md:overflow-visible border-b border-third border-opacity-20">
+    <div class="nav bg-lightOrange w-full z-10 px-4 md:p-0 md:h-auto  overflow-hidden md:overflow-visible border-b border-third border-opacity-20">
       <div class="py-4 w-95  xl:w-8/12 relative mx-auto md:flex justify-between items-center">
         <a href="{{ route('home') }}" class="font-medium text-2xl color-primary">
           <img src="/image/home/logo.png" class="w-auto h-10" alt="Skinhac Logo">  

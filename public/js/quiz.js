@@ -62,6 +62,7 @@ $(document).ready(function () {
         }
     });
 
+    // set minimum of 3 checked to proceed
     let limit = 4;
     $(".max-3").on("change", function (evt) {
         if ($("input[name='questionFour[]']:checked").length >= limit) {
@@ -69,6 +70,7 @@ $(document).ready(function () {
         }
     });
 
+    //check if the image is being uploaded if not throw alert and empty input
     $('[type="file"]').change(function () {
         let fileInput = $(this);
         if (
@@ -83,16 +85,17 @@ $(document).ready(function () {
             };
             image.onerror = function () {
                 alert("Invalid image");
-                // fileInput.val(null);
             };
             image.src = url.createObjectURL(fileInput[0].files[0]);
         }
     });
 
+    //modal close button controls
     $(".close").click(function () {
         $(".overlay").css({ display: "none" });
     });
 
+    //click anywhere but the modal to close it
     $(".overlay").on("click", function (e) {
         if (e.target !== this) {
             return;

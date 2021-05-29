@@ -19,7 +19,6 @@ class CreateLeadsTable extends Migration
             $table->string('email');
             $table->string('phone');
             $table->mediumText('message')->nullable();
-            $table->string('referrer')->nullable();
             $table->timestamps();
         });
 

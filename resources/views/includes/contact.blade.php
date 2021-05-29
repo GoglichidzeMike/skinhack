@@ -2,11 +2,6 @@
   <h3 class="text-2xl text-secondary tracking-wider text-center mb-6">Get in touch!</h3>
   <p class="text-secondary text-center">You can reach us anytime you want!</p>
   <p class="text-secondary text-center mb-6">And we are always happy to chat!</p>
-      @if (session('status'))
-        <div class="text-center animate-pulse text-secondary font-medium my-4">
-            {{ session('status') }} 
-        </div>
-      @endif
   <div>
     <div class="social w-97 mx-auto flex justify-center flex-wrap mb-4">
       <a href="#">
@@ -37,7 +32,7 @@
 
     <div class="bg-white w-97 lg:w-3/5 xl:w-2/5 mx-auto py-10 p-4 rounded-xl shadow-lg">
     <h2 class=" text-secondary tracking-wider mb-6">Contact form<h2>
-      <form action="{{ route('quiz') }}" method="post" enctype="multipart/form-data" class="w-full md:flex justify-between">
+      <form action="{{ route('contact') }}" method="post" enctype="multipart/form-data" class="w-full md:flex justify-between">
         @csrf
         <div class="w-full  mx-auto md:mx-0 md:mr-4">
           <label for="name" class="text-secondary block  mb-1">Name</label>
@@ -53,6 +48,11 @@
           <button type="submit" class="tracking-widest px-8 py-2 text-xs bg-pink  text-white rounded-lg hover:bg-secondary transition-colors duration-300 ease-in-out">Send</button>
         </div>
       </form>
+      @if (session('message'))
+        <div class="text-center animate-pulse text-secondary font-medium my-4">
+            {{ session('message') }} 
+        </div>
+      @endif
     </div>
   </div>
     

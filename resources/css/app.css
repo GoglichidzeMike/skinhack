@@ -60,7 +60,6 @@
 .nav {
     max-height: 4rem;
     transition: max-height 220ms ease-in;
-    background-color: #ffb042;
 }
 
 .burger {
