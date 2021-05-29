@@ -62,12 +62,22 @@ class HomeController extends Controller
         Assessment::create(
             [
             'name'=>$request->name,
+            'age'=> $request->age,
+            'email'=>$request->email,
             'imageOne' => $imageOneName,        
             'imageTwo' => $imageTwoName,        
             'imageThree' => $imageThreeName, 
             'questionTwo'=> json_encode($_POST['questionTwo']),
             'questionThree'=> $request->questionThree,
-            'questionFour'=> json_encode($_POST['questionFour'])
+            'questionFour'=> json_encode($_POST['questionFour']),
+            'questionFive'=> json_encode($_POST['questionFive']),
+            'questionSix'=> $request->questionSix,
+            'questionSeven'=> $request->questionSeven,
+            'questionEight'=> $request->questionEight,
+            'questionNine'=> json_encode($_POST['questionNine']),
+            'questionTen'=> $request->questionTen,
+            'questionEleven'=> $request->questionEleven,
+            'questionExtra'=> $request->questionExtra,
             ]
         );
 

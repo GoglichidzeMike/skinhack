@@ -11,12 +11,22 @@ class Assessment extends Model
 
     protected $fillable = [
         'name',
+        'age',
+        'email',
         'imageOne',
         'imageTwo',
         'imageThree',
         'questionTwo',
         'questionThree',
         'questionFour',
+        'questionFive',
+        'questionSix',
+        'questionSeven',
+        'questionEight',
+        'questionNine',
+        'questionTen',
+        'questionEleven',
+        'questionExtra'
     ];
 
 

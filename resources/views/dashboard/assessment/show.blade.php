@@ -13,7 +13,14 @@
     </h2>
 
     <div class="my-1">
+      <span class="font-medium mr-3 my-1">Email: </span><span>{{ $single->email }}</span>
+    </div>
+    <div class="my-1 flex">
       <span class="font-medium mr-3">Name: </span><span>{{ $single->name }}</span>
+    </div>
+    <span class="font-medium mr-3 my-1">Age: </span><span>{{ $single->age }}</span>
+    <div class="my-1">
+      <span class="font-medium mr-3 my-1">Gender: </span><span>{{ $single->questionEleven }}</span>
     </div>
     <div class="mt-1 mb-6">
       <span class="font-medium mr-3">Date: </span><span>{{ $single->created_at->toDayDateTimeString() }}</span>
@@ -49,6 +56,68 @@
         ?>
       </p>
     </div>
+
+
+
+    <div class="my-4">
+      <p class="font-medium mr-3">Do you have any concerns about your eye area?</p>
+      <p class="text-secondary ml-4">
+
+        <?php
+          $newStr = str_replace('"','',str_replace("]","",str_replace("[","", str_replace('",', "<br>", $single->questionFive))));
+          echo $newStr
+        ?>
+      </p>
+    </div>
+
+
+    <div class="my-4">
+      <p class="font-medium mr-3">What has been your experience with skincare so far?</p>
+      <p class="text-secondary ml-4">
+        {{$single->questionSix}}
+      </p>
+    </div>
+    <div class="my-4">
+      <p class="font-medium mr-3">What can we help you with?</p>
+      <p class="text-secondary ml-4">
+        {{$single->questionSeven}}
+      </p>
+    </div>
+    <div>
+      <p class="font-medium mr-3">How much time do you have to spend on a skincare routine?</p>
+      <p class="text-secondary ml-4">
+        {{$single->questionEight}}
+      </p>
+    </div>
+
+
+
+    <div class="my-4">
+      <p class="font-medium mr-3">What do you currently use?</p>
+      <p class="text-secondary ml-4">
+
+        <?php
+          $newStr = str_replace('"','',str_replace("]","",str_replace("[","", str_replace('",', "<br>", $single->questionNine))));
+          echo $newStr
+        ?>
+      </p>
+    </div>
+
+
+    <div class="my-4">
+      <p class="font-medium mr-3">What is your monthly budget on skincare?</p>
+      <p class="text-secondary ml-4">
+        {{$single->questionTen}}
+      </p>
+    </div>
+    
+    <div class="my-4">
+      <p class="font-medium mr-3">Extra info</p>
+      <p class="text-secondary ml-4">
+        {{$single->questionExtra}}
+      </p>
+    </div>
+
 
     <div class="my-4">
       <p class="text font-semibold">Selfies</p>

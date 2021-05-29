@@ -17,12 +17,22 @@ class CreateAssessmentsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
+            $table->string('age');
+            $table->string('email');
             $table->string('imageOne');
             $table->string('imageTwo');
             $table->string('imageThree');
             $table->json('questionTwo');
             $table->string('questionThree');
             $table->json('questionFour');
+            $table->json('questionFive');
+            $table->string('questionSix');
+            $table->string('questionSeven');
+            $table->string('questionEight');
+            $table->json('questionNine');
+            $table->string('questionTen');
+            $table->string('questionEleven');
+            $table->string('questionExtra');
         });
     }
 
