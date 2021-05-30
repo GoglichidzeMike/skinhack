@@ -268,13 +268,15 @@
                 </div>
 
                 <h3 class="text-xl text-secondary tracking-wider text-center">How young are you?</h3>
+               
                 <label for="age" hidden></label>
                 <input type="text" name="age" id="age" placeholder="Your Age" class="quiz-input mb-6" value="{{ old('age') }}" required>
 
                 <h3 class="text-xl text-secondary tracking-wider text-center">Is there anything else you would like us to know?</h3>
                 <p class="text-secondary text-center text-sm">Please mention if you have any health conditions, are taking medication, have had procedures done recently, if you are currently taking Isotretinoin or have done so in the past 6 months</p>
+                
                 <label for="questionExtra" hidden></label>
-                <textarea type="text" rows="4" name="questionExtra" id="questionExtra" placeholder="Extra info" class="quiz-input" value="{{ old('questionExtra') }}" required></textarea>
+                <textarea type="text" rows="4" name="questionExtra" id="questionExtra" placeholder="Extra info" class="quiz-input" required>{{{ old('questionExtra') }}}</textarea>
 
                 <a id="nextBtn-11" class="quiz-next">Next</a>
             </div>

@@ -5,7 +5,7 @@
 <div class="w-full py-32 relative" id="how">
 
 
-  <div class="w-97 md:w-11/12 lg:w-9/12 mx-auto">
+  <div class="w-97 md:w-11/12 lg:w-10/12 mx-auto">
     <div class="texts w-full lg:w-2/3 mx-auto">
       <h2 class="text-center text-3xl text-secondary tect-medium mb-4 tracking-wider">This is how it works</h2>
       <p class="text-center text-secondary">A short descriptive text for the how it works section. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolor Lorem ipsum dolor sit amet.</p>

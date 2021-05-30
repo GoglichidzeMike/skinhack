@@ -199,4 +199,12 @@ $(document).ready(function () {
         }
         $(".overlay").hide();
     });
+
+    //prevents enter press from submitting a form
+    $(window).keydown(function (event) {
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            return false;
+        }
+    });
 });
