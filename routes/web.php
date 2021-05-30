@@ -7,13 +7,18 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AssessmentController;
 use App\Http\Controllers\LeadController;
+use App\Mail\QuizSubmitted;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
+
+
 
 
 //some public routes
 
 Route::get('/', [HomeController::class,'index'])->name('home');
 Route::get('/quiz', [HomeController::class,'quiz'])->name('quiz');
+Route::get('/testemail', [HomeController::class,'email'])->name('email');
 Route::post('/quiz', [HomeController::class,'quiz_store']);
 
 
@@ -41,3 +46,4 @@ Route::post('/login', [LoginController::class,'store']);
 Route::get('/register', [RegisterController::class,'index'])->name('register');
 Route::post('/register', [RegisterController::class,'store']);
 Route::post('/logout', [LogoutController::class,'store'])->name('logout');
+

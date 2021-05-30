@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\QuizSubmitted;
 use App\Models\Assessment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -25,19 +28,50 @@ class HomeController extends Controller
     }
 
 
+    public function email()
+    {
+
+        $single = Assessment::find(1);
+
+        Mail::to('goglichidze.mike@gmail.com')->send(new QuizSubmitted($single));
+
+    }
+
+
     public function quiz_store(Request $request)
     {
 
         // dd($request);
 
 
-        $validated = $request->validate([
+        $validator = Validator::make($request->all(),[
             'name' => 'required|max:255',
+            'age'=>  'required|max:255',
+            'email'=> 'required|max:255',
+            'questionTwo'=>  'required|max:255',
+            'questionThree'=> 'required|max:255',
+            'questionFour'=> 'required|max:255',
+            'questionFive'=>  'required|max:255',
+            'questionSix'=> 'required|max:255',
+            'questionSeven'=> 'required|max:255',
+            'questionEight'=>  'required|max:255',
+            'questionNine'=>  'required|max:255',
+            'questionTen'=>  'required|max:255',
+            'questionEleven'=> 'required|max:255',
+            'questionExtra'=>  'required|max:500',
             'imageOne' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:15000',
             'imageTwo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:15000',
             'imageThree' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:15000',
         ]);
-        
+
+
+        if ($validator->fails()) {
+            return redirect(url()->previous() .'#assesment')
+                    ->withErrors($validator)
+                    ->withInput();
+        }
+
+
 
         $destinationPath = 'uploads/image/';
 
@@ -59,7 +93,7 @@ class HomeController extends Controller
 
 
 
-        Assessment::create(
+        $single = Assessment::create(
             [
             'name'=>$request->name,
             'age'=> $request->age,
@@ -82,10 +116,12 @@ class HomeController extends Controller
         );
 
 
+        Mail::to('goglichidze.mike@gmail.com')->send(new QuizSubmitted($single));
 
-            return redirect(url()->previous().'#assesment')->with('status', 'Your assessment was successfully sent');
+        return redirect(url()->previous().'#assesment')->with('status', 'Your assessment was successfully sent');
 
     }
 
 
 }
+
