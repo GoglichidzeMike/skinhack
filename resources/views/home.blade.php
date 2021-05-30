@@ -1,10 +1,42 @@
 @extends('layouts.home')
 
 @section('content')
-    
+<div class="w-full">
+  <div class="w-97 md:w-11/12 lg:10/12 xl:w-8/12 mx-auto py-10 min-h-544 flex flex-col md:flex-row md:justify-between" >
+    <div class="w-full lg:w-4/12 mx-auto">
+      <img src="/image/home/header-logo.png" alt="skinhack logo orange" class="w-48 h-auto mx-auto">
+      <div class="h-1 rounded mt-4 mb-2 w-10/12 mx-auto bg-secondary bg-opacity-80"></div>
+      <h1 class="uppercase font-light tracking-widestXl text-center">ingredients over hype</h1>
+      <p class="text-secondary my-4">
+        Too many products, too many steps, too many promises, and lengthy trials & errors...
+      </p>
+      <p class="font-bold text-secondary mb-4">
+        Skin care shouldn't be THIS complicated!
+      </p>
+      <p class="text-secondary mb-4">
+        Our mission is to <span class="font-bold">custom design your beauty game plan</span> to get the best out of your skin, so you can give your best to life!
+      </p>
+      <p class="text-secondary mb-4">
+        We'll hold your hand through the process - saving you the time, the overspending, the misinformed recommendations and skin oopsies!
+      </p>
+      <p class="text-secondary font-bold mb-8">
+        Ready for your best skin yet?
+      </p>
+      <div class="mx-auto md:m-0 flex sm:block justify-center">
+        <a href="#how" class="px-6 py-2     text-xs sm:text-base rounded-md text-secondary font-medium border-secondary  border hover:shadow-xl hover:bg-pink  hover:text-white transition duration-300 ease-linear">See how it works</a>
+      </div>
+    </div>
+    <div class="w-full lg:w-7/12 flex items-center mt-8 md:m-0">
+      <img src="/image/home/header.jpg" alt="Girls Smiling Selfie" class="w-full rounded shadow-xl">
+    </div>
+  </div> 
+</div>
+
+
+
+
+
 <div class="w-full py-32 relative" id="how">
-
-
   <div class="w-97 md:w-11/12 lg:w-10/12 mx-auto">
     <div class="texts w-full lg:w-2/3 mx-auto">
       <h2 class="text-center text-3xl text-secondary tect-medium mb-4 tracking-wider">This is how it works</h2>
@@ -56,7 +88,7 @@
 
 <div class="w-full bg-third py-20" id="why">
   <div class="w-97 md:w-11/12 2xl:w-8/12 mx-auto flex flex-col-reverse lg:flex-row justify-between">
-    <div class="w-full lg:w-1/2">
+    <div class="w-full lg:w-7/12 lg:mr-4">
       <h3 class="text-3xl text-secondary  mb-4 tracking-wider text-center lg:text-left">Why choose us?</h3>
       <div class="my-8 flex flex-col space-y-6">
 
@@ -92,11 +124,9 @@
       </div>
     </div>
   
-    <div class="p-4 lg:p-0 mb-6 lg:m-0">
+    <div class="p-4 lg:p-0 mb-6 lg:m-0 flex items-center justify-center">
       <div class="flex">
-        <img src="/image/home/why-section.jpg" alt="Skin care" class="rounded-lg relative mx-auto h-80 lg:h-auto " style="z-index:40">
-        {{-- <div class="lg:w-full h-full bg-secondary absolute bottom-2 right-2 rounded-lg shadow-xl" style="z-index:1"></div>
-        <div class="lg:w-full h-full bg-primary absolute top-3 left-3 rounded-lg shadow-xl" style="z-index:1"></div> --}}
+        <img src="/image/home/why-section.jpg" alt="Skin care" class="rounded-lg relative mx-auto h-80 lg:h-auto shadow-xl" style="z-index:40">
       </div>
     </div>
   </div>

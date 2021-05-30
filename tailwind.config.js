@@ -24,6 +24,9 @@ module.exports = {
             width: {
                 97: "97%",
             },
+            letterSpacing: {
+                widestXl: "0.35em",
+            },
         },
     },
     variants: {},

@@ -26051,6 +26051,10 @@ video {
   letter-spacing: 0.1em;
 }
 
+.tracking-widestXl {
+  letter-spacing: 0.35em;
+}
+
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -31151,7 +31155,7 @@ video {
 
 .nav-link:hover {
   --tw-text-opacity: 1;
-  color: rgba(255, 235, 231, var(--tw-text-opacity));
+  color: rgba(254, 147, 153, var(--tw-text-opacity));
 }
 
 .nav-link {
@@ -31170,7 +31174,7 @@ video {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #ffebe7;
+  background-color: #fe9399;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -31576,7 +31580,7 @@ video {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #ffebe7;
+  background-color: #fe9399;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -57165,6 +57169,10 @@ video {
 
   .sm\:tracking-widest {
     letter-spacing: 0.1em;
+  }
+
+  .sm\:tracking-widestXl {
+    letter-spacing: 0.35em;
   }
 
   .sm\:select-none {
@@ -87590,6 +87598,10 @@ video {
     letter-spacing: 0.1em;
   }
 
+  .md\:tracking-widestXl {
+    letter-spacing: 0.35em;
+  }
+
   .md\:select-none {
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -118011,6 +118023,10 @@ video {
 
   .lg\:tracking-widest {
     letter-spacing: 0.1em;
+  }
+
+  .lg\:tracking-widestXl {
+    letter-spacing: 0.35em;
   }
 
   .lg\:select-none {
@@ -148436,6 +148452,10 @@ video {
     letter-spacing: 0.1em;
   }
 
+  .xl\:tracking-widestXl {
+    letter-spacing: 0.35em;
+  }
+
   .xl\:select-none {
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -178857,6 +178877,10 @@ video {
 
   .\32xl\:tracking-widest {
     letter-spacing: 0.1em;
+  }
+
+  .\32xl\:tracking-widestXl {
+    letter-spacing: 0.35em;
   }
 
   .\32xl\:select-none {

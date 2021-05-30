@@ -19,6 +19,12 @@
   
   
   <link rel="stylesheet preload" as="style" href="{{ asset('css/app.css') }}">
+  <link rel="icon" type="image/png" href="/image/fav/favico-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/image/fav/favico-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/image/fav/favico-96.png" sizes="96x96">
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152 x152" href="/image/fav/favico-152.png">
+
 
   <script src="/js/app.js" defer></script>
   <script src="/js/quiz.js" defer></script>
@@ -32,49 +38,37 @@
 
 <body class="bg-white min-h-screen flex justify-between flex-col overflow-visible">
   <a id="button"></a>
-  <div class="hero">
-    <div class="nav bg-lightOrange w-full z-10 px-4 md:p-0 md:h-auto  overflow-hidden md:overflow-visible border-b border-third border-opacity-20">
-      <div class="py-4 w-95  xl:w-8/12 relative mx-auto md:flex justify-between items-center">
-        <a href="{{ route('home') }}" class="font-medium text-2xl color-primary">
-          <img src="/image/home/logo.png" class="w-auto h-10" alt="Skinhac Logo">  
-        </a>
-          <div class="burger absolute top-2 right-2 md:hidden cursor-pointer">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-        <ul class="flex flex-col md:flex-row md:items-center text-white space-y-2 my-4 md:m-0 md:space-x-6 md:space-y-0">
-          <li>
-            <a href="{{ route('home') }}" class="nav-link">Home</a>
-          </li>
-          <li>
-            <a href="#how" class="nav-link">About us</a>
-          </li>
-          <li>
-            <a href="#why" class="nav-link">Why us</a>
-          </li>
-          <li>
-            <a href="#assesment" class="nav-link">Asessment</a>  
-          </li>
-        </ul>
-        <a href="/#contact" class="text-sm md:text-base bg-pink py-1 px-8 shadow-md text-white font-medium rounded-xl hover:text-secondary hover:bg-white hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">Contact</a>
-        </ul>
-      </div>
-    </div>
-    <div class="w-97 md:w-10/12 lg:w-8/12 mx-auto py-20 min-h-544 flex flex-col md:flex-row">
-      <div class="w-full lg:w-1/2">
-        <h1 class="text-white text-2xl md:text-4xl text-center sm:text-left">Header text goes here! We can make it shrot or long, its entirely up to you!</h1>
-        <p class="text-white my-10 text-sm sm:text-base text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non suscipit nesciunt voluptatum. Assumenda odio, labore dolorum tempore minima quas?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <div class="mx-auto md:m-0 flex sm:block justify-center">
-          {{-- <a href="#contact" class="px-6 py-2 bg-white rounded-xl font-medium text-dark shadow-md hover:shadow-xl hover:bg-secondary  hover:text-white transition duration-300 ease-linear mr-6">Talk to us!</a> --}}
-          <a href="#contact" class="px-6 py-2 text-xs sm:text-base  bg-pink rounded-xl font-medium text-white shadow-md hover:shadow-xl hover:bg-white  hover:text-secondary  transition duration-300 ease-linear mr-6">Talk to us!</a>
-          <a href="#how" class="px-6 py-2     text-xs sm:text-base rounded-xl text-white font-medium border-white border hover:shadow-xl hover:bg-white hover:text-secondary transition duration-300 ease-linear">See how it works</a>
+  <div class="nav bg-white w-full z-10 px-4 md:p-0 md:h-auto  overflow-hidden md:overflow-visible border-b border-gray-500 border-opacity-20">
+    <div class="py-4 w-95  xl:w-8/12 relative mx-auto md:flex justify-between items-center">
+      <a href="{{ route('home') }}" class="font-medium text-2xl color-primary">
+        <img src="/image/home/logo.png" class="w-auto h-10" alt="Skinhac Logo">  
+      </a>
+        <div class="burger absolute top-2 right-2 md:hidden cursor-pointer">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-      </div>
+      <ul class="flex flex-col md:flex-row md:items-center text-secondary space-y-2 my-4 md:m-0 md:space-x-6 md:space-y-0">
+        <li>
+          <a href="{{ route('home') }}" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#how" class="nav-link">About us</a>
+        </li>
+        <li>
+          <a href="#why" class="nav-link">Why us</a>
+        </li>
+        <li>
+          <a href="#assesment" class="nav-link">Asessment</a>  
+        </li>
+      </ul>
+      <a href="/#contact" class="text-sm md:text-base bg-lightOrange py-1 px-8 shadow-md text-white font-medium rounded-xl hover:bg-pink  hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">Contact</a>
+      </ul>
     </div>
   </div>
+
+
+  
 
 
   @yield('content')
@@ -90,17 +84,17 @@
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
             <li>
-              <a href="#" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">Section Two</a>
+              <a href="#how" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">About us</a>
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
           </div>
           <div class="sm:flex sm:space-x-2 text-secondary">
             <li>
-              <a href="#" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">Three</a>
+              <a href="#why" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">Why us</a>
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
             <li>
-              <a href="#" class="text-sm sm:text-base py-3 hover:text-pink  focus:outline-none focus:text-pink transition duration-300 ease-out ">Something</a>  
+              <a href="#assesment" class="text-sm sm:text-base py-3 hover:text-pink  focus:outline-none focus:text-pink transition duration-300 ease-out ">Assessment</a>  
             </li>
           </div>
         </div>
@@ -122,27 +116,6 @@
 </html>
 
 <style>
-.hero{
-  background-color: linear-gradient(89.68deg, #FFFFFF -1.23%, #FEA018 -1.22%, #FFA216 99.7%);
-  background-image: url(/image/home/hero-bt.jpg);
-  background-size:  auto 100%;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-@media(min-width: 895px){
-  .hero{
-    background-image: url(/image/home/hero-bg-md.jpg);
-    background-size: cover;
-  }
-}
-
-
-@media (min-width: 1400px){
-  .hero{
-    background-image: url(/image/home/hero-bg.jpg);
-  }
-}
 
 
 
