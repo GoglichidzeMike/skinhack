@@ -70,9 +70,9 @@ echo  $newStr
   
 
 ### Selfies
-[Selfie 1](http://localhost:8000/uploads/image/{{$single['imageOne']}})
-[Selfie 2](http://localhost:8000/uploads/image/{{$single['imageTwo']}})
-[Selfie 3](http://localhost:8000/uploads/image/{{$single['imageThree']}})
+[Selfie 1](https://memike.xyz/uploads/image/{{$single['imageOne']}})
+[Selfie 2](https://memike.xyz/uploads/image/{{$single['imageTwo']}})
+[Selfie 3](https://memike.xyz/uploads/image/{{$single['imageThree']}})
 
  
 
@@ -80,7 +80,7 @@ echo  $newStr
 
 
 
-[See this entry in the dashboard](http://localhost:8000/dashboard/assessment/)
+[See this entry in the dashboard](https://memike.xyz/dashboard/assessment/)
 
 
 

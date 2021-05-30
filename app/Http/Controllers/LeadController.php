@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Lead;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\LeadSubmitted;
+
 
 class LeadController extends Controller
 {
@@ -38,7 +41,7 @@ class LeadController extends Controller
         ]);
 
 
-        Lead::create(
+       $single =  Lead::create(
             [
              'name'=> $request->name,
              'message'=> $request->message,
@@ -46,6 +49,9 @@ class LeadController extends Controller
              'email'=> $request->email,
             ]
         );
+
+
+        Mail::to('goglichidze.mike@gmail.com')->send(new LeadSubmitted($single));
 
         return redirect(url()->previous().'#contact')->with('message', 'Your message was successfully sent!');
     }
