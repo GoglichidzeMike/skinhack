@@ -4,7 +4,7 @@
 @section('content')
     
 <div class="flex flex-col items-center" >
-  <div class="w-95 md:w-8/12 bg-white py-6 px-2 md:p-6 mb-10 rounded-lg">
+  <div class="w-97 md:w-8/12 bg-white py-6 px-2 md:p-6 mb-10 rounded-lg">
     <h2 class="text-2xl sm:text-3xl">
       {{$lead->name}}      
     </h2>

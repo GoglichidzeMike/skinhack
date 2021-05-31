@@ -15,7 +15,7 @@
     </div>
   @endif  
 
-  <div class="w-95 lg:w-11/12 bg-white py-6 px-1 md:p-6 rounded-lg">
+  <div class="w-97 lg:w-11/12 bg-white py-6 px-1 md:p-6 rounded-lg">
     <div class="flex justify-end">
       <p data-href="/leads/exort" id="export" class="inline-block text-dark  px-4 mb-2 cursor-pointer py-1 border border-blue-500 rounded hover:bg-blue-500 hover:text-white font-medium transition-colors duration-150 ease-in-out" onclick="exportTasks(event.target);">Export</p>
     </div>

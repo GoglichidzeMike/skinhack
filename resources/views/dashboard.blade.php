@@ -4,7 +4,7 @@
     
 
 <div class="flex flex-col items-center" >
-  <div class="w-95 md:w-8/12 bg-white p-6 rounded-lg flex flex-col items-center">
+  <div class="w-97 my-4 md:w-8/12 bg-white p-6 rounded-lg flex flex-col items-center">
     <p class="text-center text-lg font-medium">
       Dashboard
     </p> 

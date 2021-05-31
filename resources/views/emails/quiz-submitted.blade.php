@@ -70,9 +70,9 @@ echo  $newStr
   
 
 ### Selfies
-[Selfie 1](https://memike.xyz/uploads/image/{{$single['imageOne']}})
-[Selfie 2](https://memike.xyz/uploads/image/{{$single['imageTwo']}})
-[Selfie 3](https://memike.xyz/uploads/image/{{$single['imageThree']}})
+[Selfie 1](https://skinhack.ae/uploads/image/{{$single['imageOne']}})
+[Selfie 2](https://skinhack.ae/uploads/image/{{$single['imageTwo']}})
+[Selfie 3](https://skinhack.ae/uploads/image/{{$single['imageThree']}})
 
  
 

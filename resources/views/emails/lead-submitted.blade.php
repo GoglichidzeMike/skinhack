@@ -15,7 +15,7 @@
 
 
 
-[See this entry in the dashboard](https://memike.xyz/dashboard/leads/)
+[See this entry in the dashboard](https://skinhack.ae/dashboard/leads/)
 
 
 
