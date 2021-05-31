@@ -6,16 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-  <meta name="description" content="Skinhack Website" />
+  <meta name="description" content="Our mission is to custom design your beauty game plan to get the best out of your skin, so you can give your best to life!" />
   
-  {{-- <meta property="og:site_name"          content="Psychotherapy.ge ფსიქოლოგია ყოველდღიურ ცხოვრებაში" />
+  <meta property="og:site_name"          content="Skinhack - Ingredients Over Hype" />
   <meta property="og:url"                contnet="<?php echo url()->current() ?>">
   <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="{{ $title }}" />
-  <meta property="og:locale"             content="ka_GE" />
-  <meta property="og:description"        content="ფსიქოლოგია ყოველდღიურ ცხოვრებაში. კლინიკური ფსიქოლოგი ირმა კვაჭაძე" />
-  @isset($image) <meta property="og:image"              content="{{ $image }}" />@endisset
-  @empty($image) <meta property="og:image"              content="https://psychotherapy.ge/image/fb-share.jpg" />@endempty --}}
+  <meta property="og:title"              content="Skinhack - Ingredients Over Hype" />
+  <meta property="og:description"        content="Our mission is to custom design your beauty game plan to get the best out of your skin, so you can give your best to life!" />
+  <meta property="og:image"              content="https://memike.xyz/image/fb-share.jpg" />
   
   
   <link rel="stylesheet preload" as="style" href="{{ asset('css/app.css') }}">
@@ -27,7 +25,6 @@
 
 
   <script src="/js/app.js" defer></script>
-  <script src="/js/quiz.js" defer></script>
   <script src="/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" rel="preload" as="script"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">

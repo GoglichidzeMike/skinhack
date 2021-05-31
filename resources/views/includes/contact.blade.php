@@ -4,28 +4,28 @@
   <p class="text-secondary text-center mb-6">And we are always happy to chat!</p>
   <div>
     <div class="social w-97 mx-auto flex justify-center flex-wrap mb-4">
-      <a href="" target="_blank" rel="nofollow noopener">
+      <a href="https://www.facebook.com/Skinhack-100446905597051" target="_blank" rel="nofollow noopener">
         <div class="contact-card m-2">
           <div class="mb-4 bg-white p-2 rounded-full">
             <img src="/image/contact/facebook.svg" alt="facebook icon" class="w-10 h-10">
           </div>
-          <p class=" text-sm text-center">Skinhack Facebook</p>
+          <p class=" text-sm text-center">Skinhack</p>
         </div>
       </a>
-      <a href="" target="_blank" rel="nofollow noopener">
+      <a href="https://www.instagram.com/skinhack.ae/" target="_blank" rel="nofollow noopener">
         <div class="contact-card m-2">
           <div class="mb-4 bg-white p-2 rounded-full">
             <img src="/image/contact/instagram.svg" alt="Insagram icon" class="w-10 h-10">
           </div>
-          <p class=" text-sm text-center">@skinhackSomething</p>
+          <p class=" text-sm text-center">@skinhack.ae</p>
         </div>
       </a>
-      <a href="" target="_blank" rel="nofollow noopener">
+      <a href="mailto:hello@skinhack.ae" target="_blank" rel="nofollow noopener">
         <div class="contact-card m-2">
           <div class="mb-4 bg-white p-2 rounded-full">
             <img src="/image/contact/mail.svg" alt="Mail icon" class="w-10 h-10">
           </div>
-          <p class=" text-sm text-center">info@skinhack.com</p>
+          <p class=" text-sm text-center">hello@skinhack.ae</p>
         </div>
       </a>
       <a href="https://web.whatsapp.com/send?phone=447449339157&text=Hi%2C%20I%27m%20Interested%20in%20your%20services"  target="_blank" rel="nofollow noopener">

@@ -16,18 +16,10 @@ class HomeController extends Controller
     {
 
         return view('home', [
-            'title' => 'Home Page - Skinhack'
+            'title' => 'Skinhack - Ingredients Over Hype'
             ]);
     }
     
-    public function quiz()
-    {
-        return view('quiz', [
-            'title' => 'Quiz - Skinhack'
-            ]);
-    }
-
-
     public function email()
     {
 

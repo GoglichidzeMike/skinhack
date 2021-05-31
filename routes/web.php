@@ -17,9 +17,7 @@ use Illuminate\Support\Facades\Mail;
 //some public routes
 
 Route::get('/', [HomeController::class,'index'])->name('home');
-Route::get('/quiz', [HomeController::class,'quiz'])->name('quiz');
-Route::get('/testemail', [HomeController::class,'email'])->name('email');
-Route::post('/quiz', [HomeController::class,'quiz_store']);
+Route::post('/quiz', [HomeController::class,'quiz_store'])->name('quiz');
 
 
 //dashboard route

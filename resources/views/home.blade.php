@@ -23,7 +23,7 @@
         Ready for your best skin yet?
       </p>
       <div class="mx-auto md:m-0 flex sm:block justify-center">
-        <a href="#how" class="px-6 py-2     text-xs sm:text-base rounded-md text-secondary font-medium border-secondary  border hover:shadow-xl hover:bg-pink  hover:text-white transition duration-300 ease-linear">See how it works</a>
+        <a href="#how" class="px-6 py-2     text-xs sm:text-base rounded-md text-secondary font-medium border-secondary  border hover:shadow-xl hover:bg-pink  hover:text-white transition duration-200 ease-linear">See how it works</a>
       </div>
     </div>
     <div class="w-full lg:w-7/12 flex items-center mt-8 md:m-0">
@@ -95,29 +95,29 @@
         <div class="reason">
           <img src="/image/home/ico-1.svg" alt="Beauty Icon" class="w-20 h-auto mr-4">
           <div class="">
-            <p class="text-xl text-secondary font-medium">Reason header</p>
-            <p class="text-secondary text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laboriosam!</p>
+            <p class="text-xl text-secondary font-medium">Skin Expertise</p>
+            <p class="text-secondary text-sm">Your analysis is done by a registered and experienced dermatologist with a duty of care. We know our stuff so we’ll always be honest if we think skin care shouldn’t be the main priority in your particular case. Count on us to point you in the right direction</p>
           </div>
         </div>
         <div class="reason">
           <img src="/image/home/ico-2.svg" alt="Beauty Icon" class="w-20 h-auto mr-4">
           <div class="">
-            <p class="text-xl text-secondary font-medium">Very Affordable</p>
-            <p class="text-secondary text-sm sm:text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry!</p>
+            <p class="text-xl text-secondary font-medium">Transparency</p>
+            <p class="text-secondary text-sm">We are not affiliated with any brands nor do we own any. We’re just here to help you select the right products based on ingredients, reputability & your skin goals. Let’s take the guesswork out</p>
           </div>
         </div>
         <div class="reason">
           <img src="/image/home/ico-3.svg" alt="Beauty Icon" class="w-20 h-auto mr-4">
           <div class="">
-            <p class="text-xl text-secondary font-medium">Convinient</p>
-            <p class="text-secondary text-sm sm:text-base">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+            <p class="text-xl text-secondary font-medium">Save your time for what matters</p>
+            <p class="text-secondary text-sm">No more time-consuming trial & error, dealing with pesky sellers & shopping around. We’ll deliver everything together to your door and give you the best bang for your buck - your beauty isn’t a luxury! </p>
           </div>
         </div>
         <div class="reason">
-          <img src="/image/home/ico-4.svg" alt="Beauty Icon" class="w-20 h-auto mr-4">
+          <img src="/image/home/ico-4.png" alt="Beauty Icon" class="w-20 h-auto mr-4">
           <div class="">
-            <p class="text-xl text-secondary font-medium">Team of Professionals</p>
-            <p class="text-secondary text-sm sm:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form!</p>
+            <p class="text-xl text-secondary font-medium">We care</p>
+            <p class="text-secondary text-sm">We’ll keep checking in with you to make sure your routine is showing results you're happy with. We’ll be here for your questions, concerns and to revise your routine when needed</p>
           </div>
         </div>
         
