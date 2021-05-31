@@ -27,7 +27,6 @@ Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard'
 // TODO: will have assessment controllers here
 Route::get('/dashboard/assessment', [AssessmentController::class, 'index'])->name('assessment.index');
 Route::post('/dashboard/assessment/{id}', [AssessmentController::class, 'destroy'])->name('assessment.destroy');
-Route::get('/dashboard/assessment/export', [AssessmentController::class, 'export'])->name('assessment.export');
 Route::get('/dashboard/assessment/{id}', [AssessmentController::class, 'show'])->name('assessment.show');
 
 

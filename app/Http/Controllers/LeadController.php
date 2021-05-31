@@ -36,7 +36,6 @@ class LeadController extends Controller
         //validate all the request
         $this->validate($request,[
             'name'=>'required',
-            'phone'=>'required',
             'email'=>'required|email',
         ]);
 
@@ -51,7 +50,7 @@ class LeadController extends Controller
         );
 
 
-        Mail::to('goglichidze.mike@gmail.com')->send(new LeadSubmitted($single));
+        Mail::to('hello@skinhack.ae')->cc('alwalireem@gmail.com')->send(new LeadSubmitted($single));
 
         return redirect(url()->previous().'#contact')->with('message', 'Your message was successfully sent!');
     }

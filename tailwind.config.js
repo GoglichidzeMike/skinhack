@@ -1,10 +1,23 @@
 module.exports = {
-    // purge: {
-    //     enabled: true,
-    //     content: [
-
-    //     ],
-    // },
+    purge: {
+        enabled: true,
+        content: [
+            "./resources/css.app.css",
+            "./resources/js/app.js",
+            "./resources/views/home.blade.php",
+            "./resources/views/dashboard.blade.php",
+            "./resources/views/auth/login.blade.php",
+            "./resources/views/auth/register.blade.php",
+            "./resources/views/dashboard/assessment/index.blade.php",
+            "./resources/views/dashboard/assessment/show.blade.php",
+            "./resources/views/dashboard/leads/index.blade.php",
+            "./resources/views/dashboard/leads/show.blade.php",
+            "./resources/views/layouts/home.blade.php",
+            "./resources/views/layouts/app.blade.php",
+            "./resources/views/includes/contact.blade.php",
+            "./resources/views/includes/quiz.blade.php",
+        ],
+    },
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {

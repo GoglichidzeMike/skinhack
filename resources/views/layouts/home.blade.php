@@ -36,8 +36,8 @@
 <body class="bg-white min-h-screen flex justify-between flex-col overflow-visible">
   <a id="button"></a>
   <div class="nav bg-white w-full z-10 px-4 md:p-0 md:h-auto  overflow-hidden md:overflow-visible border-b border-gray-500 border-opacity-20">
-    <div class="py-4 w-95  xl:w-8/12 relative mx-auto md:flex justify-between items-center">
-      <a href="{{ route('home') }}" class="font-medium text-2xl color-primary">
+    <div class="p-4 w-95  xl:w-11/12 relative mx-auto md:flex justify-between items-center">
+      <a href="{{ route('home') }}" class=" md:hidden font-medium text-2xl color-primary">
         <img src="/image/home/logo.png" class="w-auto h-10" alt="Skinhac Logo">  
       </a>
         <div class="burger absolute top-2 right-2 md:hidden cursor-pointer">
@@ -50,13 +50,13 @@
           <a href="{{ route('home') }}" class="nav-link">Home</a>
         </li>
         <li>
-          <a href="#how" class="nav-link">About us</a>
+          <a href="#how" class="nav-link">How it works</a>
         </li>
         <li>
           <a href="#why" class="nav-link">Why us</a>
         </li>
         <li>
-          <a href="#assesment" class="nav-link">Asessment</a>  
+          <a href="#assesment" class="nav-link">Your skin analysis</a>  
         </li>
       </ul>
       <a href="/#contact" class="text-sm md:text-base bg-lightOrange py-1 px-8 shadow-md text-white font-medium rounded-xl hover:bg-pink  hover:shadow-lg transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary">Contact</a>
@@ -81,7 +81,7 @@
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
             <li>
-              <a href="#how" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">About us</a>
+              <a href="#how" class="text-sm sm:text-base py-3 hover:text-pink focus:outline-none focus:text-pink  transition duration-300 ease-out ">How it works</a>
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
           </div>
@@ -91,7 +91,7 @@
             </li>
             <div class="w-px h-auto bg-white bg-opacity-50 hidden sm:block"></div>
             <li>
-              <a href="#assesment" class="text-sm sm:text-base py-3 hover:text-pink  focus:outline-none focus:text-pink transition duration-300 ease-out ">Assessment</a>  
+              <a href="#assesment" class="text-sm sm:text-base py-3 hover:text-pink  focus:outline-none focus:text-pink transition duration-300 ease-out ">Your skin analysis</a>  
             </li>
           </div>
         </div>

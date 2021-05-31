@@ -38,7 +38,7 @@
       </a>
     </div>
 
-    <div class="bg-white w-97 lg:w-3/5 xl:w-2/5 mx-auto py-10 p-4 rounded-xl shadow-lg">
+    <div class="bg-white w-97 lg:w-3/5 xl:w-2/5 mx-auto p-4 rounded-xl shadow-lg">
     <h2 class=" text-secondary tracking-wider mb-6">Contact form<h2>
       <form action="{{ route('contact') }}" method="post" enctype="multipart/form-data" class="w-full md:flex justify-between">
         @csrf

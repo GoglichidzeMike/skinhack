@@ -108,7 +108,7 @@ class HomeController extends Controller
         );
 
 
-        Mail::to('goglichidze.mike@gmail.com')->send(new QuizSubmitted($single));
+        Mail::to('hello@skinhack.ae')->cc('alwalireem@gmail.com')->send(new QuizSubmitted($single));
 
         return redirect(url()->previous().'#assesment')->with('status', 'Your assessment was successfully sent');
 

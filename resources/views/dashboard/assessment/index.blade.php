@@ -16,14 +16,6 @@
   @endif  
 
   <div class="w-97 lg:w-11/12 bg-white py-6 px-1 md:p-6 rounded-lg">
-    <div class="flex justify-end">
-      <p data-href="/dashboard/assessment/export" id="export" class="inline-block text-dark  px-4 mb-2 cursor-pointer py-1 border border-blue-500 rounded hover:bg-blue-500 hover:text-white font-medium transition-colors duration-150 ease-in-out" onclick="exportTasks(event.target);">Export</p>
-    </div>
-      <script>
-        function exportTasks(_this) {
-          window.location.href = '/dashboard/assessment/export';
-        }
-      </script>
     <div class="flex rounded-sm w-full bg-gray-100 mb-4 shadow text-sm lg:text-base">
       <div class="rounded-sm p-2 border-2 border-r-0 border-gray w-full lg:w-8/12">Name</div>
       <div class="rounded-sm p-2 border-2 border-r-0 border-gray sm:w-6/12 md:w-5/12 hidden sm:block">Date</div>

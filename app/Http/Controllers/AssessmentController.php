@@ -30,16 +30,7 @@ class AssessmentController extends Controller
         return view('dashboard.assessment.show', ['single'=>$assessment]);
     }
 
-    public function export()
-    {
-        // TODO: to be completed later
-    }
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Assessment  $assessment
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
         $assessment = Assessment::find($id);

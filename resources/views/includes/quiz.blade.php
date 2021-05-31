@@ -11,9 +11,9 @@
     @endif
     <div class="q-0">
         <div class="w-97 md:w-8/12 mx-auto flex flex-col items-center space-y-8">
-            <h3 class="text-2xl text-secondary tracking-wider text-center">Take the assessment right now</h3>
-            <p class="text-secondary text-center">Last what are you waiting for text, the very last call to action goes here.</p>
-            <a id="start" class="cursor-pointer diag-btn flex items-center text-secondary px-8 py-2 tracking-widest border border-secondary hover:shadow-xl relative">Start your diagnostic <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path id="icon" d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z" fill="#25283d"/></svg></a>
+            <h3 class="text-2xl text-secondary tracking-wider text-center">Try the skin analysis test now</h3>
+            <p class="text-secondary text-center">It's free, takes 5 minutes and will get you professional advice that your skin will love.</p>
+            <a id="start" class="cursor-pointer diag-btn flex items-center text-secondary px-8 py-2 tracking-widest border border-secondary hover:shadow-xl relative">Yes, let's do it! <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path id="icon" d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z" fill="#25283d"/></svg></a>
         </div>
     </div>
     <div class="w-97 md:w-8/12 mx-auto flex flex-col items-center space-y-8">
@@ -31,13 +31,13 @@
                    <input id="q-2-1" name="questionTwo[]" type="checkbox" class="quiz-checkbox" value="Dry as the desert" {{ (is_array(old('questionTwo')) and in_array("Dry as the desert", old('questionTwo'))) ? ' checked' : '' }}><span class="ml-2">Dry as the desert</span>
                 </label>
                 <label class="quiz-label">
-                   <input id="q-2-2" name="questionTwo[]" type="checkbox" class="quiz-checkbox" value="Oily, I’m shining on in life" {{ (is_array(old('questionTwo')) and in_array("Oily, I’m shining on in life", old('questionTwo'))) ? ' checked' : '' }}><span class="ml-2">Oily, I’m shining on in life</span>
+                   <input id="q-2-2" name="questionTwo[]" type="checkbox" class="quiz-checkbox" value="Oily, I'm shining on in life" {{ (is_array(old('questionTwo')) and in_array("Oily, I'm shining on in life", old('questionTwo'))) ? ' checked' : '' }}><span class="ml-2">Oily, I'm shining on in life</span>
                 </label>
                 <label class="quiz-label">
                     <input id="q-2-3" name="questionTwo[]" type="checkbox" class="quiz-checkbox" value="Combination, my skin likes to keep me guessing"  {{ (is_array(old('questionTwo')) and in_array("Combination, my skin likes to keep me guessing", old('questionTwo'))) ? ' checked' : '' }}><span class="ml-2">Combination, my skin likes to keep me guessing</span>
                 </label>
                 <label class="quiz-label">
-                    <input id="q-2-4" name="questionTwo[]" type="checkbox" class="quiz-checkbox" value="Normal, it’s well behaved"  {{ (is_array(old('questionTwo')) and in_array("Normal, it’s well behaved", old('questionTwo'))) ? ' checked' : '' }}><span class="ml-2">Normal, it’s well behaved</span>
+                    <input id="q-2-4" name="questionTwo[]" type="checkbox" class="quiz-checkbox" value="Normal, it's well behaved"  {{ (is_array(old('questionTwo')) and in_array("Normal, it's well behaved", old('questionTwo'))) ? ' checked' : '' }}><span class="ml-2">Normal, it's well behaved</span>
                 </label> 
                 <label class="quiz-label">
                     <input id="q-2-5" name="questionTwo[]" type="checkbox" class="quiz-checkbox" value="I have no idea what you are talking about?"  {{ (is_array(old('questionTwo')) and in_array("I have no idea what you are talking about?", old('questionTwo'))) ? ' checked' : '' }}><span class="ml-2">I have no idea what you are talking about?</span>
@@ -90,7 +90,7 @@
                    <input id="q-4-8" name="questionFour[]" type="checkbox" class="max-3 quiz-checkbox" value="Visibly aging skin" {{ (is_array(old('questionFour')) and in_array("Visibly aging skin", old('questionFour'))) ? ' checked' : '' }}><span class="ml-2">Visibly aging skin</span>
                 </label>
                 <label class="quiz-label">
-                   <input id="q-4-9" name="questionFour[]" type="checkbox" class="max-3 quiz-checkbox" value="I’m pretty happy with my skin. I just want to keep it that way now" {{ (is_array(old('questionFour')) and in_array("I’m pretty happy with my skin. I just want to keep it that way now", old('questionFour'))) ? ' checked' : '' }}><span class="ml-2">I’m pretty happy with my skin. I just want to keep it that way now. </span>
+                   <input id="q-4-9" name="questionFour[]" type="checkbox" class="max-3 quiz-checkbox" value="I'm pretty happy with my skin. I just want to keep it that way now" {{ (is_array(old('questionFour')) and in_array("I'm pretty happy with my skin. I just want to keep it that way now", old('questionFour'))) ? ' checked' : '' }}><span class="ml-2">I'm pretty happy with my skin. I just want to keep it that way now. </span>
                 </label>
                 <a id="nextBtn-4" class="quiz-next">Next</a>
             </div>
@@ -114,7 +114,7 @@
                    <input id="q-5-4" name="questionFive[]" type="checkbox" class="quiz-checkbox" value="Dryness" {{ (is_array(old('questionFive')) and in_array("Dryness", old('questionFive'))) ? ' checked' : '' }}><span class="ml-2">Dryness<span>
                 </label>
                 <label class="quiz-label">
-                   <input id="q-5-5" name="questionFive[]" type="checkbox" class="quiz-checkbox" value="I’m quite happy and I want to keep it this way." {{ (is_array(old('questionFive')) and in_array("I’m quite happy and I want to keep it this way.", old('questionFive'))) ? ' checked' : '' }}><span class="ml-2">I’m quite happy and I want to keep it this way.<span>
+                   <input id="q-5-5" name="questionFive[]" type="checkbox" class="quiz-checkbox" value="I'm quite happy and I want to keep it this way." {{ (is_array(old('questionFive')) and in_array("I'm quite happy and I want to keep it this way.", old('questionFive'))) ? ' checked' : '' }}><span class="ml-2">I'm quite happy and I want to keep it this way.<span>
                 </label>
                 
                 <a id="nextBtn-5" class="quiz-next">Next</a>
@@ -132,13 +132,13 @@
                     <input id="q-6-2" name="questionSix" type="radio" class="quiz-checkbox text-primary " value="I just do the basics like cleansing & moisturizing and an occasional product I just try"  @if(old('questionSix')) checked @endif><span class="ml-2">I just do the basics like cleansing & moisturizing and an occasional product I just try</span>
                 </label>
                 <label class="quiz-label">
-                    <input id="q-6-3" name="questionSix" type="radio" class="quiz-checkbox text-primary " value="I’m currently experimenting with new products and routines"  @if(old('questionSix')) checked @endif><span class="ml-2">I’m currently experimenting with new products and routines</span>
+                    <input id="q-6-3" name="questionSix" type="radio" class="quiz-checkbox text-primary " value="I'm currently experimenting with new products and routines"  @if(old('questionSix')) checked @endif><span class="ml-2">I'm currently experimenting with new products and routines</span>
                 </label>
                 <label class="quiz-label">
                     <input id="q-6-4" name="questionSix" type="radio" class="quiz-checkbox text-primary " value="I have my favorite products and a routine in place and have come to know my skin well"  @if(old('questionSix')) checked @endif><span class="ml-2">I have my favorite products and a routine in place and have come to know my skin well</span>
                 </label>
                 <label class="quiz-label">
-                    <input id="q-6-5" name="questionSix" type="radio" class="quiz-checkbox text-primary " value="I’m an expert. I understand the lingo and I know exactly how to choose the right products for me"  @if(old('questionSix')) checked @endif><span class="ml-2">I’m an expert. I understand the lingo and I know exactly how to choose the right products for me</span>
+                    <input id="q-6-5" name="questionSix" type="radio" class="quiz-checkbox text-primary " value="I'm an expert. I understand the lingo and I know exactly how to choose the right products for me"  @if(old('questionSix')) checked @endif><span class="ml-2">I'm an expert. I understand the lingo and I know exactly how to choose the right products for me</span>
                 </label>
                 <a id="nextBtn-6" class="quiz-next">Next</a>
             </div>
@@ -147,19 +147,19 @@
             <div class="q-7 flex-col hidden text-sm">
                 <h3 class="text-xl text-secondary tracking-wider text-center">What can we help you with?</h3>
                 <label class="quiz-label">
-                    <input id="q-7-1" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I’m new to this all and I need help!"  @if(old('questionSeven')) checked @endif><span class="ml-2">I’m new to this all and I need help!</span>
+                    <input id="q-7-1" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I'm new to this all and I need help!"  @if(old('questionSeven')) checked @endif><span class="ml-2">I'm new to this all and I need help!</span>
                 </label>
                 <label class="quiz-label">
-                    <input id="q-7-2" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I have a basic routine but I’m not sure it’s doing anything?"  @if(old('questionSeven')) checked @endif><span class="ml-2">I have a basic routine but I’m not sure it’s doing anything?</span>
+                    <input id="q-7-2" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I have a basic routine but I'm not sure it's doing anything?"  @if(old('questionSeven')) checked @endif><span class="ml-2">I have a basic routine but I'm not sure it's doing anything?</span>
                 </label>
                 <label class="quiz-label">
-                    <input id="q-7-3" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I’ve been trying out products but I’ve been disappointed!"  @if(old('questionSeven')) checked @endif><span class="ml-2">I’ve been trying out products but I’ve been disappointed!</span>
+                    <input id="q-7-3" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I've been trying out products but I've been disappointed!"  @if(old('questionSeven')) checked @endif><span class="ml-2">I've been trying out products but I've been disappointed!</span>
                 </label>
                 <label class="quiz-label">
                     <input id="q-7-4" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I have specific skin concerns I want help with"  @if(old('questionSeven')) checked @endif><span class="ml-2">I have specific skin concerns I want help with</span>
                 </label>
                 <label class="quiz-label">
-                    <input id="q-7-5" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I’m a pro and I just want to see if there’s something I’m overlooking"  @if(old('questionSeven')) checked @endif><span class="ml-2">I’m a pro and I just want to see if there’s something I’m overlooking</span>
+                    <input id="q-7-5" name="questionSeven" type="radio" class="quiz-checkbox text-primary" value="I'm a pro and I just want to see if there's something I'm overlooking"  @if(old('questionSeven')) checked @endif><span class="ml-2">I'm a pro and I just want to see if there's something I'm overlooking</span>
                 </label>
                 <a id="nextBtn-7" class="quiz-next">Next</a>
             </div>

@@ -15,7 +15,7 @@
 
 ### What is your skin type?
 <?php
-$newStr = str_replace('"','',str_replace("]","",str_replace("[","", str_replace('",', " \n ", $single['questionTwo']))));
+$newStr = str_replace('"','',str_replace("]","",str_replace("[","", str_replace('",', "  \n ", $single['questionTwo']))));
 echo  $newStr
 ?>
 
@@ -34,7 +34,7 @@ echo  $newStr
 
 ### Do you have any concerns about your eye area?
 <?php
-  $newStr = str_replace('"','',str_replace("]","",str_replace("[","", str_replace('",',  "\n", $single['questionFive']))));
+  $newStr = str_replace('"','',str_replace("]","",str_replace("[","", str_replace('",',  "  \n", $single['questionFive']))));
   echo $newStr
 ?>
 
@@ -55,7 +55,7 @@ echo  $newStr
 
 ### What do you currently use?
 <?php
-  $newStr = str_replace('"','',str_replace("]","",str_replace("[","", str_replace('",', "\n", $single['questionNine']))));
+  $newStr = str_replace('"','',str_replace("]","",str_replace("[","", str_replace('",', "  \n", $single['questionNine']))));
   echo $newStr
 ?>
 
